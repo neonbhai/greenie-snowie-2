@@ -1,16 +1,20 @@
 {
   "functions": {
-    "api/**/*.php": {
+    "functions/**/*.php": {
       "runtime": "vercel-php@0.7.3"
+    },
+    "api/**/*.php": {
+      "runtime": "vercel-php@0.7.3",
+      "excludeFiles": "{assets/**,style/**,vendor/**,.git/**,node_modules/**,*.jpg,*.jpeg,*.png,*.gif,*.mp4,*.mov,*.avi,*.mkv,*.log,*.cache,*.tmp}"
     }
   },
   "routes": [
     { "src": "/assets/(.*)", "dest": "/assets/$1" },
     { "src": "/style/(.*)", "dest": "/style/$1" },
-    { "src": "/api/404", "dest": "/api/404.php" },
-    { "src": "/api/actions/save-newsletter", "dest": "/api/actions/save-newsletter.php" },
-    { "src": "/api/actions/send-mail", "dest": "/api/actions/send-mail.php" },
-    { "src": "/api/actions/unsubscribe", "dest": "/api/actions/unsubscribe.php" },
+    { "src": "/api/404", "dest": "/functions/404.php" },
+    { "src": "/api/actions/save-newsletter", "dest": "/functions/actions/save-newsletter.php" },
+    { "src": "/api/actions/send-mail", "dest": "/functions/actions/send-mail.php" },
+    { "src": "/api/actions/unsubscribe", "dest": "/functions/actions/unsubscribe.php" },
     { "src": "/api/(.*)\\.php", "dest": "/api/$1.php" },
     { "src": "/api/(.*)", "dest": "/api/$1.php" },
     { "src": "/(.*)\\.php$", "dest": "/api/$1.php" },
