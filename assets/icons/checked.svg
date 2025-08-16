@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="check-circle-1" transform="translate(-2 -2)">
+    <path id="Path_1" data-name="Path 1" d="M23.1,10,11,22.1" transform="translate(13.504 11.816)" fill="none" stroke="#00704a" stroke-linecap="round" stroke-width="2"/>
+    <path id="Path_2" data-name="Path 2" d="M9,12.5l5.376,5.376" transform="translate(10.128 16.036)" fill="none" stroke="#00704a" stroke-linecap="round" stroke-width="2"/>
+    <rect id="Rectangle_9" data-name="Rectangle 9" width="48" height="48" rx="9" transform="translate(3 3)" fill="none" stroke="#00704a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

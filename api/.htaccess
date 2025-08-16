@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Redirect from /?p=value to /value/
+RewriteCond %{QUERY_STRING} ^p=([^&]+)$
+RewriteCond %{REQUEST_URI} !^/%1/$
+RewriteRule ^$ /%1/ [L,R=301,QSD]
+
+# Handle the rewritten URL if accessed directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/$ index.php?p=$1 [L]

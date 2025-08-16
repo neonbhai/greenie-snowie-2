@@ -1,0 +1,18 @@
+/vendor
+.vercel
+
+# Exclude logs from serverless functions (47MB access.log + 3.7MB error.log)
+
+api/logs/\*\*
+\*.log
+
+# Exclude development and cache files
+
+_.tmp
+_.cache
+.DS_Store
+Thumbs.db
+
+# Exclude other unnecessary files from functions
+
+.htaccess
