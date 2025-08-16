@@ -6,6 +6,7 @@
   },
   "routes": [
     { "src": "/assets/(.*)", "dest": "/assets/$1" },
+    { "src": "/style/(.*)", "dest": "/style/$1" },
     { "src": "/api/404", "dest": "/api/404.php" },
     { "src": "/api/actions/save-newsletter", "dest": "/api/actions/save-newsletter.php" },
     { "src": "/api/actions/send-mail", "dest": "/api/actions/send-mail.php" },

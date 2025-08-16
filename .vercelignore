@@ -1,11 +1,6 @@
 /vendor
 .vercel
 
-# Exclude logs from serverless functions (47MB access.log + 3.7MB error.log)
-
-api/logs/\*\*
-\*.log
-
 # Exclude development and cache files
 
 _.tmp
